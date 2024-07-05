@@ -3,15 +3,15 @@
     "body-parser": "^1.20.0",
     "express.js": "^1.0.0",
     "mongoose": "^6.6.1",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "yarn": "^1.22.19"
   },
   "name": "hack1",
-  "description": "",
+  "description": "��#\u0000 \u0000w\u0000e\u0000c\u0000a\u0000r\u0000e\u0000h\u0000a\u0000c\u0000k\u00001\u0000\r\u0000 \u0000",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "start":"node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/urvashi-19/wecarehack1/issues"
   },
-  "homepage": "https://github.com/urvashi-19/wecarehack1#readme"
+  "homepage": "https://github.com/urvashi-19/wecarehack1#readme",
+  "devDependencies": {}
 }

@@ -1,41 +1,28 @@
 const express = require("express")
 const app = express()
 const path = require("path");
-const staticPath = path.join(__dirname + "/static" );
-console.log( path.join(__dirname  ))
+const staticPath = path.join(__dirname );
 const bodyParser = require('body-parser');
-app.use(express.static(staticPath ));
+app.use(express.static(staticPath));
 
-const PORT = process.env.PORT || 3000
+
 
 app.get("/", (req, res) => {
    res.sendFile(staticPath)
 })
 app.get("/register", (req, res) => {
     
-    res.sendFile(path.join(__dirname + "/static/reg.html"));
- })
-app.get("/login1", (req, res) => {
-    
-    res.sendFile( res.sendFile(staticPath));
+    res.sendFile(path.join(__dirname + "/reg.html"));
  })
 app.get("/fertility", (req, res) => {
     
-    res.sendFile(path.join(__dirname + "/static/women.html"));
+    res.sendFile(path.join(__dirname + "/women.html"));
  })
 app.get("/health", (req, res) => {
     
-    res.sendFile(path.join(__dirname + "/static/main.html"));
- })
-app.get("/midwife", (req, res) => {
-    
-    res.sendFile(path.join(__dirname + "/static/cv.html"));
- })
-app.get("/help", (req, res) => {
-    
-    res.sendFile(path.join(__dirname + "/static/help.html"));
+    res.sendFile(path.join(__dirname + "/main.html"));
  })
 
-app.listen(PORT, () => {
+app.listen(3000, () => {
     console.log("successfully working on port 3000");
 })
